@@ -1,0 +1,14 @@
+/* Media query breaks - 1440px, 960px, 720px */
+
+/* Montserrat:500 font style uploaded */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+/* Initilisation of padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
