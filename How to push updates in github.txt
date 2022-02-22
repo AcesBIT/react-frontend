@@ -1,0 +1,14 @@
+to clone the git repo:
+git clone url
+
+to check status of the repo:
+git status
+
+to add files to the repo:
+git add .
+
+to commit the changes:
+git commit -m "message"
+
+to push:
+git push
