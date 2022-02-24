@@ -3,7 +3,9 @@
 .login-section {
     background-color: #F0FFE4;
     border-radius: 0px 0px 8px 8px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 32px;
+    padding: 100px 0px 80px;
 }
 
 .login-cluster {
@@ -22,22 +24,55 @@
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 #admin-login {
     background-color: #E8EEFE;
+
+}
+
+#admin-login:hover {
+    background-color: #dfe8ff;
+}
+
+#admin-login:active {
+    background-color: #d4dff8;
 }
 
 #school-login {
     background-color: #C2D3E7;
+}
+#school-login:hover {
+    background-color: #b2c8e0;
+}
+
+#school-login:active {
+    background-color: #a7bed8;
 }
 
 #teacher-login {
     background-color: #FDF1E5;
 }
 
+#teacher-login:hover {
+    background-color: #fdebd8;
+}
+
+#teacher-login:active {
+    background-color: #ffe3c7;
+}
+
 #student-login {
     background-color: #C6C0E2;
+}
+
+#student-login:hover {
+    background-color: #c0b9db;
+}
+
+#student-login:active {
+    background-color: #aba1d4;
 }
 
 .login-vector {

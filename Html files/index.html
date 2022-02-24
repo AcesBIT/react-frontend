@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/CSS files/navbar.css" />
     <link rel="stylesheet" href="/CSS files/login.css" />
     <link rel="stylesheet" href="/CSS files/about.css" />
+    <link rel="stylesheet" href="/CSS files/contact.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -51,7 +52,7 @@
       <!-- Menu list -->
       <ul class="nav-menu">
         <li><a id="optHome" class="active menu" href="#">Home</a></li>
-        <li><a id="optSign-in" class="menu" href="#sign-in">Sign In</a></li>
+        <!-- <li><a id="optSign-in" class="menu" href="#sign-in">Sign In</a></li> -->
         <li><a id="optAbout-us" class="menu" href="#about-us">About Us</a></li>
         <li>
           <a id="optContact-us" class="menu" href="#contact-us">Contact Us</a>
@@ -62,10 +63,10 @@
     <!-- Login Section -->
     <div class="container login-section">
       <!-- Headng -->
-      <p id="sign-in" class="section-heading">SIGN IN</p>
+      <!-- <p id="sign-in" class="section-heading"></p> -->
 
       <!-- Login area -->
-      <div class="login-cluster">
+      <div id="sign-in" class="login-cluster">
         <!-- Admin -->
         <div id="admin-login" class="login-box">
           <img
@@ -106,27 +107,100 @@
     </div>
 
     <!-- About Us Section -->
-    <div id="about-us" class="container">
+    <div id="about-us-section" class="container">
       <!-- Headng -->
       <p id="about-us" class="section-heading">ABOUT US</p>
       <div class="about-section">
         <img id="about-vector" src="/Images/About Vector/About.png" alt="" />
         <div class="about-content">
           <div class="about-heading">Online Attendance System</div>
-        <div class="about-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
-          lectus nec mauris rutrum faucibus. Integer et dapibus libero, vitae
-          rhoncus sapien. Sed cursus eu lectus in venenatis. Praesent non odio
-          sagittis, consequat nibh sit amet, ornare est. Nulla sagittis auctor
-          augue vel mollis. Sed viverra lobortis semper. Fusce cursus lectus et
-          nisi congue, a fermentum nibh posuere. Maecenas vitae magna sed libero
-          dignissim malesuada vel vulputate metus. Aliquam id ex nunc. Cras
-          aliquet sollicitudin arcu id consectetur. Suspendisse ut fermentum
-          dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          pharetra consectetur semper.
+          <div class="about-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            ac lectus nec mauris rutrum faucibus. Integer et dapibus libero,
+            vitae rhoncus sapien. Sed cursus eu lectus in venenatis. Praesent
+            non odio sagittis, consequat nibh sit amet, ornare est. Nulla
+            sagittis auctor augue vel mollis. Sed viverra lobortis semper. Fusce
+            cursus lectus et nisi congue, a fermentum nibh posuere. Maecenas
+            vitae magna sed libero dignissim malesuada vel vulputate metus.
+            Aliquam id ex nunc. Cras aliquet sollicitudin arcu id consectetur.
+            Suspendisse ut fermentum dolor. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Aliquam pharetra consectetur semper.
+          </div>
         </div>
       </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact-us" class="container">
+      <!-- Heading -->
+      <p id="contact-us" class="section-heading">CONTACT US</p>
+      <div class="contact-section">
+        <!-- Contact Info Section -->
+        <div class="contact-info">
+          <p class="contact-info-heading">Contact Information</p>
+          <p class="contact-info-sub-heading">
+            Fill up the form and our team will get back to you within 24 hours.
+          </p>
+          <div class="contact-info-type" width="18px" height="18px">
+            <img
+              src="/Images/Contact Icons/Telephone.png"
+              alt=""
+              class="contact-info-icon"
+            />
+            <p class="contact-info-value">+91 8910684983</p>
+          </div>
+          <div class="contact-info-type">
+            <img
+              src="/Images/Contact Icons/Email.png"
+              width="20px"
+              height="16px"
+              alt=""
+              class="contact-info-icon"
+            />
+            <p class="contact-info-value">govschoolattendance@gmail.com</p>
+          </div>
+          <div class="contact-info-type">
+            <img
+              src="/Images/Contact Icons/Location.png"
+              width="14px"
+              height="20px"
+              alt=""
+              class="contact-info-icon"
+            />
+            <p class="contact-info-value">Kolkata, West Bengal</p>
+          </div>
         </div>
+        <div class="contact-form">
+          <p class="contact-form-heading">Send a Message</p>
+          <div class="form-box">
+            <div class="input-box w50">
+              <input class="input" type="text" required>
+              <span class="input-name">First Name</span>
+            </div>
+            <div class="input-box w50">
+              <input class="input" type="text" required>
+              <span class="input-name">Last Name</span>
+            </div>
+            <div class="input-box w50">
+              <input class="input" type="email" required>
+              <span class="input-name">Email Id.</span>
+            </div>
+            <div class="input-box w50">
+              <input class="input" type="text" required>
+              <span class="input-name">Phone No.</span>
+            </div>
+            <div class="input-box w100">
+              <textarea class="input input-msg" required></textarea>
+              <span class="input-name">Write your message here...</span>
+            </div>
+            <div class="input-box w100">
+              <input class="input input-btn" type="submit" value="Submit">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="/JS Files/index.js"></script>
   </body>
 </html>
