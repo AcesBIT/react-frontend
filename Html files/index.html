@@ -1,32 +1,40 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/Images/Logo/favicon-32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="The Online Attendance System uses facial recognition to mark the attendance of a student and also shows their corresponding attendance details"
     />
     <title>Online Attendance System</title>
+
     <!-- CSS files -->
     <link rel="stylesheet" href="/CSS files/index.css" />
     <link rel="stylesheet" href="/CSS files/navbar.css" />
     <link rel="stylesheet" href="/CSS files/login.css" />
+    <link rel="stylesheet" href="/CSS files/about.css" />
+
     <!-- Bootstrap cdns -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <!-- JQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
+
   <body>
     <!-- Navbar -->
     <nav>
+      <!-- Logo and Brand -->
       <label class="logo"
         ><img
           class="logo-img"
@@ -34,29 +42,91 @@
           alt=""
         />ATTENDANCE SYSTEM</label
       >
+
+      <!-- Hamburger icon -->
       <label id="hamburger">
         <i class="fas fa-bars"></i>
       </label>
-      <ul>
-        <li><a id="optHome" class="active" href="#">Home</a></li>
-        <li><a id="optSign-in" href="#sign-in">Sign In</a></li>
-        <li><a id="optAbout-us" href="#">About Us</a></li>
-        <li><a id="optContact-us" href="#">Contact Us</a></li>
+
+      <!-- Menu list -->
+      <ul class="nav-menu">
+        <li><a id="optHome" class="active menu" href="#">Home</a></li>
+        <li><a id="optSign-in" class="menu" href="#sign-in">Sign In</a></li>
+        <li><a id="optAbout-us" class="menu" href="#about-us">About Us</a></li>
+        <li>
+          <a id="optContact-us" class="menu" href="#contact-us">Contact Us</a>
+        </li>
       </ul>
     </nav>
+
     <!-- Login Section -->
     <div class="container login-section">
-      <p id="sign-in">Sign In</p>
+      <!-- Headng -->
+      <p id="sign-in" class="section-heading">SIGN IN</p>
+
+      <!-- Login area -->
       <div class="login-cluster">
-        <div class="admin-login">
-          <img class="login-vector"src="/Images/Login Vectors/Admin.png" alt="">
+        <!-- Admin -->
+        <div id="admin-login" class="login-box">
+          <img
+            class="login-vector"
+            src="/Images/Login Vectors/Admin.png"
+            alt=""
+          />
           <p class="login-text">ADMIN</p>
         </div>
-        <div class="school-login"></div>
-        <div class="teacher-login"></div>
-        <div class="student-login"></div>
+        <!-- School -->
+        <div id="school-login" class="login-box">
+          <img
+            class="login-vector"
+            src="/Images/Login Vectors/School.png"
+            alt=""
+          />
+          <p class="login-text">SCHOOL</p>
+        </div>
+        <!-- Teacher -->
+        <div id="teacher-login" class="login-box">
+          <img
+            class="login-vector"
+            src="/Images/Login Vectors/Teacher.png"
+            alt=""
+          />
+          <p class="login-text">TEACHER</p>
+        </div>
+        <!-- Student -->
+        <div id="student-login" class="login-box">
+          <img
+            class="login-vector"
+            src="/Images/Login Vectors/Student.png"
+            alt=""
+          />
+          <p class="login-text">STUDENT</p>
+        </div>
       </div>
     </div>
+
+    <!-- About Us Section -->
+    <div id="about-us" class="container">
+      <!-- Headng -->
+      <p id="about-us" class="section-heading">ABOUT US</p>
+      <div class="about-section">
+        <img id="about-vector" src="/Images/About Vector/About.png" alt="" />
+        <div class="about-content">
+          <div class="about-heading">Online Attendance System</div>
+        <div class="about-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+          lectus nec mauris rutrum faucibus. Integer et dapibus libero, vitae
+          rhoncus sapien. Sed cursus eu lectus in venenatis. Praesent non odio
+          sagittis, consequat nibh sit amet, ornare est. Nulla sagittis auctor
+          augue vel mollis. Sed viverra lobortis semper. Fusce cursus lectus et
+          nisi congue, a fermentum nibh posuere. Maecenas vitae magna sed libero
+          dignissim malesuada vel vulputate metus. Aliquam id ex nunc. Cras
+          aliquet sollicitudin arcu id consectetur. Suspendisse ut fermentum
+          dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          pharetra consectetur semper.
+        </div>
+      </div>
+        </div>
     <script src="/JS Files/index.js"></script>
   </body>
 </html>

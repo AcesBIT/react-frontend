@@ -1,4 +1,4 @@
-/* Media query breaks - 1440px, 960px, 720px */
+/* Media query breaks - 1440px, 960px, 720px, 600px */
 
 /* Ubuntu font style imported */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
@@ -8,6 +8,9 @@ nav {
   background-color: #004466;
   height: 72px;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 label.logo {
@@ -15,13 +18,15 @@ label.logo {
   display: flex;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
-  font-size: 32px;
+  font-size: 36px;
   color: #dae4e9;
   margin-left: 160px;
 }
 
 img.logo-img {
-  padding-right: 4px;
+  margin-right: 4px;
+  height: 36px;
+  width: 36px;
 }
 
 nav ul {
@@ -37,13 +42,13 @@ nav ul {
 
 nav li {
   flex-direction: row;
-  margin: 0 8px;
+  margin: 0 16px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 17px;
+  font-size: 22px;
   padding: 7px;
 }
 
@@ -70,38 +75,58 @@ nav #hamburger {
 /* For screens below 1440px */
 @media (max-width: 1440px) {
   label.logo {
-    font-size: 24px;
+    font-size: 32px;
     margin-left: 60px;
   }
 
   img.logo-img {
-    height: 24px;
-    width: 24px;
+    height: 32px;
+    width: 32px;
   }
 
   nav ul {
     margin-right: 60px;
   }
 
+  nav li {
+    margin: 0 8px;
+  }
+
   nav ul li a {
-    font-size: 15px;
+    font-size: 20px;
+
   }
 }
 
 /* For screens below 960px */
 @media (max-width: 960px) {
+  nav {
+    height: 64px;
+  }
+
+  label.logo {
+    font-size: 26px;
+  }
+
+  img.logo-img {
+    height: 26px;
+    width: 26px;
+  }
+
   nav ul {
     position: fixed;
     width: 100%;
     height: 30%;
     background: #044d72;
-    top: 72px;
+    top: 64px;
     left: -100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
   }
 
   nav ul li {
@@ -109,11 +134,12 @@ nav #hamburger {
   }
 
   nav ul li a {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   nav #hamburger {
     display: flex;
+    font-size: 26px;
   }
 
   a.active,
@@ -124,6 +150,7 @@ nav #hamburger {
   nav ul.show {
     left: 0;
   }
+
 }
 
 /* For screens below 720px */
@@ -131,14 +158,15 @@ nav #hamburger {
   nav {
     height: 64px;
   }
+
   label.logo {
-    font-size: 18px;
+    font-size: 22px;
     margin-left: 40px;
   }
 
   img.logo-img {
-    height: 18px;
-    width: 18px;
+    height: 22px;
+    width: 22px;
   }
 
   nav ul {
@@ -151,29 +179,33 @@ nav #hamburger {
   }
 
   nav ul li a {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   nav #hamburger {
     font-size: 24px;
+    margin-right: 40px;
   }
 }
 
-/* For screens below 540px */
-@media (max-width: 540px) {
+/* For screens below 600px */
+@media (max-width: 600px) {
+  nav {
+    height: 48px;
+  }
+
   label.logo {
-    font-size: 14px;
-    height: 56px;
+    font-size: 16px;
   }
 
   img.logo-img {
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
   }
 
   nav ul {
-    height: 15%;
-    top: 56px;
+    height: 20%;
+    top: 48px;
   }
 
   nav ul li {
@@ -181,10 +213,10 @@ nav #hamburger {
   }
 
   nav ul li a {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   nav #hamburger {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
