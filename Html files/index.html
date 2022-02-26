@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/CSS files/login.css" />
     <link rel="stylesheet" href="/CSS files/about.css" />
     <link rel="stylesheet" href="/CSS files/contact.css" />
+    <link rel="stylesheet" href="/CSS files/footer.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -34,7 +35,8 @@
 
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav class="container-fluid">
+
       <!-- Logo and Brand -->
       <label class="logo"
         ><img
@@ -51,20 +53,18 @@
 
       <!-- Menu list -->
       <ul class="nav-menu">
-        <li><a id="optHome" class="active menu" href="#">Home</a></li>
-        <!-- <li><a id="optSign-in" class="menu" href="#sign-in">Sign In</a></li> -->
-        <li><a id="optAbout-us" class="menu" href="#about-us">About Us</a></li>
-        <li><a id="optContact-us" class="menu" href="#contact-us">Contact Us</a></li>
+        <li class="menu"><a id="optHome" class="menu-item" href="#">Home</a></li>
+        <li class="menu"><a id="optAbout-us" class="menu-item" href="#about-us">About Us</a></li>
+        <li class="menu"><a id="optContact-us" class="menu-item" href="#contact-us">Contact Us</a></li>
       </ul>
     </nav>
 
     <!-- Login Section -->
     <div class="container login-section">
-      <!-- Headng -->
-      <!-- <p id="sign-in" class="section-heading"></p> -->
 
       <!-- Login area -->
       <div id="sign-in" class="login-cluster">
+        
         <!-- Admin -->
         <div id="admin-login" class="login-box">
           <img
@@ -74,6 +74,7 @@
           />
           <p class="login-text">ADMIN</p>
         </div>
+        
         <!-- School -->
         <div id="school-login" class="login-box">
           <img
@@ -83,6 +84,7 @@
           />
           <p class="login-text">SCHOOL</p>
         </div>
+        
         <!-- Teacher -->
         <div id="teacher-login" class="login-box">
           <img
@@ -92,6 +94,7 @@
           />
           <p class="login-text">TEACHER</p>
         </div>
+        
         <!-- Student -->
         <div id="student-login" class="login-box">
           <img
@@ -106,10 +109,17 @@
 
     <!-- About Us Section -->
     <div id="about-us-section" class="container">
+
       <!-- Headng -->
       <p id="about-us" class="section-heading">ABOUT US</p>
+
+      <!-- About Section -->
       <div class="about-section">
+
+        <!-- About Image -->
         <img id="about-vector" src="/Images/About Vector/About.png" alt="" />
+
+        <!-- About Content -->
         <div class="about-content">
           <div class="about-heading">Online Attendance System</div>
           <div class="about-body">
@@ -130,9 +140,11 @@
 
     <!-- Contact Us Section -->
     <div id="contact-us" class="container">
+
       <!-- Heading -->
       <p id="contact-us" class="section-heading">CONTACT US</p>
       <div class="contact-section">
+
         <!-- Contact Info Section -->
         <div class="contact-info">
           <p class="contact-info-heading">Contact Information</p>
@@ -168,8 +180,9 @@
             <p class="contact-info-value">Kolkata, West Bengal</p>
           </div>
         </div>
+
+        <!-- Contact Form -->
         <div class="contact-form">
-          <p class="contact-form-heading">Send a Message</p>
           <div class="form-box">
             <div class="input-box w50">
               <input class="input" type="text" required>
@@ -198,6 +211,61 @@
         </div>
       </div>
     </div>
+
+    <div class="container-fluid footer">
+      
+      <!-- Footer Section -->
+      <div id="footer-section" class="container">
+  
+        <!-- Footer Menu list -->
+        <ul class="footer-nav-menu">
+          <li class="footer-menu"><a id="optHome" class="footer-menu-item" href="#">Home</a></li>
+          <li class="footer-menu"><a id="optAbout-us" class="footer-menu-item" href="#about-us">About Us</a></li>
+          <li class="footer-menu"><a id="optContact-us" class="footer-menu-item" href="#contact-us">Contact Us</a></li>
+        </ul>
+        
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+          <!-- Heading -->
+          <div class="newsletter-heading">NewsLetter</div>
+
+          <!-- Newsletter text -->
+          <div class="newsletter-text">Subscribe here to get all the latest updates on your email address</div>
+          
+          <!-- Input Box Area -->
+          <div class="newsletter-input">
+            <input type="text" placeholder="Enter your email address" class="newsletter-input-box">
+            <div class="sub-btn">
+              <img
+              src="/Images/Contact Icons/Email.png"
+              alt=""
+              class="sub-icon"
+              />
+              <p class="sub-text">Subscribe</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="social">
+          <!-- Social Text -->
+          <div class="social-text">Follow Us</div>
+
+          <!-- Social Icons -->
+          <div class="social-links">
+            <img class="social-icon" src="/Images/Social Icons/Facebook.png" alt="">
+            <img class="social-icon" src="/Images/Social Icons/Instagram.png" alt="">
+            <img class="social-icon" src="/Images/Social Icons/Twitter.png" alt="">
+            <img class="social-icon" src="/Images/Social Icons/LinkedIn.png" alt="">
+          </div>  
+        </div>  
+      </div>
+      
+      <!-- Copyright Text -->
+      <div class="copyright-text container">
+        Copyright © 2022 Attendance System | Powered By Aces
+      </div>
+
 
     <script src="/JS Files/index.js"></script>
   </body>

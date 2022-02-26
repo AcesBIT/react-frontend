@@ -7,10 +7,10 @@ nav {
   display: flex;
   background-color: #004466;
   height: 72px;
-  width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 label.logo {
@@ -52,11 +52,16 @@ nav ul li a {
   padding: 7px;
 }
 
-a.active,
 nav ul li a:hover {
   color: #ccdff1;
-  transition: 0.5s;
-  background-color: #005481;
+  transition: 0.2s;
+  background-color: #004e79;
+  border-radius: 5px;
+}
+
+nav ul li a:active {
+  color: #ccdff1;
+  background-color: #003e5f;
   border-radius: 5px;
 }
 
@@ -142,7 +147,6 @@ nav #hamburger {
     font-size: 26px;
   }
 
-  a.active,
   nav ul li a:hover {
     background-color: transparent;
   }

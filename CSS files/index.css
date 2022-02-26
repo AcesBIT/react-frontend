@@ -8,7 +8,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -19,5 +18,5 @@ body {
   padding: 60px 0px 50px 0px;
   text-align: center;
   font-size: 38px;
-  margin: 0;
 }
+
