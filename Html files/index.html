@@ -13,11 +13,11 @@
 
     <!-- CSS files -->
     <link rel="stylesheet" href="/CSS files/index.css" />
-    <link rel="stylesheet" href="/CSS files/navbar.css" />
-    <link rel="stylesheet" href="/CSS files/login.css" />
-    <link rel="stylesheet" href="/CSS files/about.css" />
-    <link rel="stylesheet" href="/CSS files/contact.css" />
-    <link rel="stylesheet" href="/CSS files/footer.css" />
+    <link rel="stylesheet" href="/CSS files/Home-Page/navbar.css" />
+    <link rel="stylesheet" href="/CSS files/Home-Page/login.css" />
+    <link rel="stylesheet" href="/CSS files/Home-Page/about.css" />
+    <link rel="stylesheet" href="/CSS files/Home-Page/contact.css" />
+    <link rel="stylesheet" href="/CSS files/Home-Page/footer.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -34,6 +34,7 @@
   </head>
 
   <body>
+
     <!-- Navbar -->
     <nav class="container-fluid">
 
@@ -52,12 +53,13 @@
       </label>
 
       <!-- Menu list -->
-      <ul class="nav-menu">
-        <li class="menu"><a id="optHome" class="menu-item" href="#">Home</a></li>
-        <li class="menu"><a id="optAbout-us" class="menu-item" href="#about-us">About Us</a></li>
-        <li class="menu"><a id="optContact-us" class="menu-item" href="#contact-us">Contact Us</a></li>
+      <ul id="nav-menu" class="nav-menu">
+        <li class="menu"><a id="nav-Home" class="menu-item" href="#">Home</a></li>
+        <li class="menu"><a id="nav-About-us" class="menu-item" href="#about-us">About Us</a></li>
+        <li class="menu"><a id="nav-Contact-us" class="menu-item" href="#contact-us">Contact Us</a></li>
       </ul>
     </nav>
+
 
     <!-- Login Section -->
     <div class="container login-section">
@@ -66,7 +68,7 @@
       <div id="sign-in" class="login-cluster">
         
         <!-- Admin -->
-        <div id="admin-login" class="login-box">
+        <div id="admin-login" class="login-box" onclick="adminSignIn()">
           <img
             class="login-vector"
             src="/Images/Login Vectors/Admin.png"
@@ -107,6 +109,7 @@
       </div>
     </div>
 
+
     <!-- About Us Section -->
     <div id="about-us-section" class="container">
 
@@ -137,6 +140,7 @@
         </div>
       </div>
     </div>
+
 
     <!-- Contact Us Section -->
     <div id="contact-us" class="container">
@@ -181,27 +185,28 @@
           </div>
         </div>
 
+        <!-- Names given for making object -->
         <!-- Contact Form -->
-        <div class="contact-form">
+        <div id="contact-form" class="contact-form">
           <div class="form-box">
             <div class="input-box w50">
-              <input class="input" type="text" required>
+              <input id="contact-fname" name="contact-fname" class="input" type="text" required>
               <span class="input-name">First Name</span>
             </div>
             <div class="input-box w50">
-              <input class="input" type="text" required>
+              <input id="contact-lname" name="contact-lname" class="input" type="text" required>
               <span class="input-name">Last Name</span>
             </div>
             <div class="input-box w50">
-              <input class="input" type="email" required>
+              <input id="contact-email" name="contact-email" class="input" type="email" required>
               <span class="input-name">Email Id.</span>
             </div>
             <div class="input-box w50">
-              <input class="input" type="text" required>
+              <input id="contact-phone" name="contact-phone" class="input" type="text" required>
               <span class="input-name">Phone No.</span>
             </div>
             <div class="input-box w100">
-              <textarea class="input input-msg" required></textarea>
+              <textarea id="contact-msg" name="contact-msg" class="input input-msg" required></textarea>
               <span class="input-name">Write your message here...</span>
             </div>
             <div class="input-box w100">
@@ -212,6 +217,7 @@
       </div>
     </div>
 
+
     <div class="container-fluid footer">
       
       <!-- Footer Section -->
@@ -219,9 +225,9 @@
   
         <!-- Footer Menu list -->
         <ul class="footer-nav-menu">
-          <li class="footer-menu"><a id="optHome" class="footer-menu-item" href="#">Home</a></li>
-          <li class="footer-menu"><a id="optAbout-us" class="footer-menu-item" href="#about-us">About Us</a></li>
-          <li class="footer-menu"><a id="optContact-us" class="footer-menu-item" href="#contact-us">Contact Us</a></li>
+          <li class="footer-menu"><a id="foot-Home" class="footer-menu-item" href="#">Home</a></li>
+          <li class="footer-menu"><a id="foot-About-us" class="footer-menu-item" href="#about-us">About Us</a></li>
+          <li class="footer-menu"><a id="foot-Contact-us" class="footer-menu-item" href="#contact-us">Contact Us</a></li>
         </ul>
         
         <!-- Newsletter Section -->
@@ -234,7 +240,7 @@
           
           <!-- Input Box Area -->
           <div class="newsletter-input">
-            <input type="text" placeholder="Enter your email address" class="newsletter-input-box">
+            <input id="footer-email" name="footer-email" type="email" placeholder="Enter your email address" class="newsletter-input-box" required>
             <div class="sub-btn">
               <img
               src="/Images/Contact Icons/Email.png"
@@ -265,7 +271,6 @@
       <div class="copyright-text container">
         Copyright © 2022 Attendance System | Powered By Aces
       </div>
-
 
     <script src="/JS Files/index.js"></script>
   </body>

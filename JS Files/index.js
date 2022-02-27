@@ -5,17 +5,38 @@ $(document).ready(function () {
   });
 });
 
-// The list disappears on selecting an option
-// $(document).ready(function () {
-//   $(".nav-menu").click(function () {
-//     $("ul.nav-menu").toggleClass("hide");
-//   });
-// });
+// Goint to the Admin sign-in page
+function adminSignIn() {
+  window.open("./Sign-In-Pages/Admin.html", "_self");
+}
 
-// function on() {
-//   document.getElementsByClassName("overlay").style.display = "block";
+// Returning to the home page
+function homePage() {
+  window.open("../index.html", "_self");
+}
+
+
+// let userName = document.getElementById('username').value;
+// let passWord = document.getElementById('password').value;
+
+// const url = "https://api-govschool.herokuapp.com";
+
+// async function adminSignIn() {
+//   const adminLoginData = {
+//     userName: userName,
+//     passWord: passWord
+//   };
+
+//   const adminJson = JSON.stringify(adminLoginData);
+
+//   const options = {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+//         'Access-Control-Allow-Origin': '*'
+//     },
+//     body: adminJson
 // }
 
-// function off() {
-//   document.getElementsByClassName("overlay").style.display = "none";
+//   fetch(`${url}/admin/login`, options).then(results => results.json()).then(console.log);
 // }
