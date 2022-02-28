@@ -5,38 +5,40 @@ $(document).ready(function () {
   });
 });
 
-// Goint to the Admin sign-in page
-function adminSignIn() {
-  window.open("./Sign-In-Pages/Admin.html", "_self");
-}
-
 // Returning to the home page
 function homePage() {
   window.open("../index.html", "_self");
 }
 
 
-// let userName = document.getElementById('username').value;
-// let passWord = document.getElementById('password').value;
+// Ad
+async function adminSignInRequest() {
+  let userName = document.getElementById('username').value;
+  let passWord = document.getElementById('password').value;
 
-// const url = "https://api-govschool.herokuapp.com";
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
 
-// async function adminSignIn() {
-//   const adminLoginData = {
-//     userName: userName,
-//     passWord: passWord
-//   };
+  var urlencoded = new URLSearchParams();
+  urlencoded.append("userName", userName);
+  urlencoded.append("password", passWord);
 
-//   const adminJson = JSON.stringify(adminLoginData);
+  var requestOptions = {
+    method: 'POST',
+    headers: myHeaders,
+    body: urlencoded,
+    redirect: 'follow'
+  };
 
-//   const options = {
-//     method: 'POST',
-//     headers: {
-//         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-//         'Access-Control-Allow-Origin': '*'
-//     },
-//     body: adminJson
-// }
+  let responseVal;
 
-//   fetch(`${url}/admin/login`, options).then(results => results.json()).then(console.log);
-// }
+  await fetch("https://api-govschool.herokuapp.com/admin/login", requestOptions)
+    .then(response => responseVal = response)
+    .catch(error => console.log('error', error));
+
+  let decoded = await responseVal.text();
+  // console.log(decoded);
+  let data = JSON.parse(decoded);
+  console.log(data.message);
+  console.log(responseVal.status);
+}

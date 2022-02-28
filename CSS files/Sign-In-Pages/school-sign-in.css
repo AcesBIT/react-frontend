@@ -1,5 +1,5 @@
 .sign-in-box {
-    box-shadow: 12px 12px 0px 0px #e0e7fa;
+    box-shadow: 12px 12px 0px 0px #E1E9F3
 }
 
 .reset-button {
@@ -15,13 +15,13 @@
 }
 
 .submit-button {
-    background-color: #E8EEFE;
+    background-color: #C2D3E7;
 }
 
 .submit-button:hover {
-    background-color: #e0e8ff;
+    background-color: #b0cae9;
 }
 
 .submit-button:active {
-    background-color: #d1ddff;
+    background-color: #9fbee4;
 }
