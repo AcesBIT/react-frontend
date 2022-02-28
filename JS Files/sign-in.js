@@ -23,3 +23,8 @@ function resetSignIn() {
   document.getElementById("username").innerHTML = "";
   document.getElementById("password").innerHTML = "";
 }
+
+// Login into the admin site
+// function adminSite() {
+//   window.open("../Site-Pages/admin-site.html", "_self");
+// }

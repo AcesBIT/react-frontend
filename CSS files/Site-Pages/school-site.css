@@ -1,0 +1,11 @@
+.site-navbar {
+    background-color: #E8EEFE;
+}
+
+.logout-btn:hover {
+    background-color: #dfe8ff;
+}
+
+.logout-btn:active {
+    background-color: #d4dff8;
+}

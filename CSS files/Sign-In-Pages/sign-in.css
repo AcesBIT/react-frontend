@@ -1,6 +1,11 @@
-* {
+html, body {
     margin: 0;
     padding: 0;
+    /* Helps in using the full 100vh */
+    display: flex;
+    flex-flow: column;
+
+    height: 100%;
 }
 
 div.container-fluid {
@@ -8,9 +13,11 @@ div.container-fluid {
 }
 
 .background {
+    height: auto;
     display: flex;
     justify-content: center;
-    height: 100%;
+    align-items: center;
+    flex: 1 1 auto;
 }
 
 .back-icon {
