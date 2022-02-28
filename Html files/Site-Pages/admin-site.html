@@ -8,7 +8,6 @@
     <title>Admin Site</title>
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="/CSS files/Site-Pages/site.css" />
     <link rel="stylesheet" href="/CSS files/Site-Pages/admin-site.css" />
 
     <!-- Bootstrap cdns -->
@@ -54,10 +53,10 @@
       </div>
     </nav>
 
-    <!-- Registration Tabs -->
+    <!-- Tabs -->
     <div class="container registration-tab-area">
       <!-- School Registration -->
-      <div class="registration-tab school-registration">
+      <div class="registration-tab school-registration" onclick="schoolReg()">
         <!-- School Vector -->
         <img
           src="/Images/Site Vectors/School-Registration.png"
@@ -65,121 +64,32 @@
           class="registration-vector"
         />
 
-        <label for="" class="registration-text">SCHOOL</label>
+        <label for="" class="registration-text">SCHOOL REGISTRATION</label>
       </div>
 
       <!-- Admin Registration -->
-      <div class="registration-tab admin-registration">
+      <div class="registration-tab admin-registration" onclick="adminReg()">
         <!-- Admin Vector -->
         <img
           src="/Images/Site Vectors/Admin-Registration.png"
           alt=""
           class="registration-vector"
         />
-        <label for="" class="registration-text">ADMIN</label>
-      </div>
-    </div>
-    
-    <!-- Heading -->
-    <div class="container list-heading">Registered Schools</div>
-
-    <!-- Registered Schools Area -->
-    <div class="container site-tab-area">
-
-      <!-- School Tabs 1 -->
-      <div class="site-tab">
-        <img
-          src="/Images/Site Vectors/School-Building.png"
-          alt=""
-          class="tab-vector"
-        />
-
-        <!-- Tab Title -->
-        <div class="tab-title">SCHOOL 1</div>
-
-        <!-- Tab Description -->
-        <div class="tab-description">Address</div>
+        <label for="" class="registration-text">ADMIN REGISTRATION</label>
       </div>
 
-       <!-- School Tabs 1 -->
-       <div class="site-tab">
+      <!-- Registered Schools -->
+      <div class="registration-tab registered-school" onclick="schoolList()">
+        <!-- Admin Vector -->
         <img
-          src="/Images/Site Vectors/School-Building.png"
+          src="/Images/Site Vectors/Registered-Schools.png"
           alt=""
-          class="tab-vector"
+          class="registration-vector registered-school-vector"
         />
-
-        
-        <!-- Tab Title -->
-        <div class="tab-title">SCHOOL 1</div>
-
-        <!-- Tab Description -->
-        <div class="tab-description">Address</div>
-      </div>
-
-      <!-- School Tabs 2 -->
-      <div class="site-tab">
-        <img
-          src="/Images/Site Vectors/School-Building.png"
-          alt=""
-          class="tab-vector"
-        />
-
-        <!-- Tab Title -->
-        <div class="tab-title">SCHOOL 2</div>
-
-        <!-- Tab Description -->
-        <div class="tab-description">Address 2</div>
-      </div>
-
-       <!-- School Tabs 1 -->
-       <div class="site-tab">
-        <img
-          src="/Images/Site Vectors/School-Building.png"
-          alt=""
-          class="tab-vector"
-        />
-
-        <!-- Tab Title -->
-        <div class="tab-title">SCHOOL 1</div>
-
-        <!-- Tab Description -->
-        <div class="tab-description">Address</div>
-      </div>
-
-       <!-- School Tabs 1 -->
-       <div class="site-tab">
-        <img
-          src="/Images/Site Vectors/School-Building.png"
-          alt=""
-          class="tab-vector"
-        />
-
-        <!-- Tab Title -->
-        <div class="tab-title">SCHOOL 1</div>
-
-        <!-- Tab Description -->
-        <div class="tab-description">Address</div>
-      </div>
-
-      <!-- School Tabs 3 -->
-      <div class="site-tab">
-        <img
-          src="/Images/Site Vectors/School-Building.png"
-          alt=""
-          class="tab-vector"
-        />
-
-        <!-- Tab Title -->
-        <div class="tab-title">SCHOOL 3</div>
-
-        <!-- Tab Description -->
-        <div class="tab-description">Address 3</div>
+        <label for="" class="registration-text">REGISTERED SCHOOLS</label>
       </div>
     </div>
 
-    <!-- Registered Admins Area -->
-    <!-- Heading -->
-    <div class="container list-heading">Registered Admins</div>
+    <script src="/JS Files/site.js"></script>
   </body>
 </html>
