@@ -1,4 +1,4 @@
-<!-- http://127.0.0.1:5500/Html%20files/Registration-Pages/admin-registration.html -->
+<!-- http://127.0.0.1:5500/Html-Files/Sign-In-Pages/admin-sign-in.html -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,12 +6,12 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/Images/Logo/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Admin Registration Page" />
-    <title>Admin Registration</title>
+    <meta name="description" content="Admin Sign In Page" />
+    <title>Admin Sign In</title>
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="/CSS files/Registration-Pages/registration.css" />
-    <link rel="stylesheet" href="/CSS files/Registration-Pages/admin-registration.css" />
+    <link rel="stylesheet" href="/CSS files/Sign-In-Pages/sign-in.css" />
+    <link rel="stylesheet" href="/CSS files/Sign-In-Pages/admin-sign-in.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -26,54 +26,56 @@
     <!-- JQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
-  <body style="background-color:#C8CFEB;">
+  
+  <body style="background-color:#E8EEFE;">
+
+
     <div class="container-fluid">
+
       <!-- Back icon -->
-      <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="adminSite()"/>
+      <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="homePage()"/>
     </div>
 
+
     <div class="background">
-      <!-- Registration Form -->
-      <div class="registration-box">
+
+      <!-- Sign-In Form -->
+      <div class="sign-in-box">
 
         <!-- Admin Vector -->
-        <img class="vector" src="/Images/Site Vectors/Admin-Registration-Form.png" alt=""/>
+        <img class="vector" src="/Images/Login Vectors/Admin-Sign-In.png" alt=""/>
 
         <!-- Welcome Heading -->
-        <div class="registration-type">Admin Registration</div>
+        <div class="welcome-text">Welcome</div>
         
-        <!-- Registration message -->
-        <div class="sign-in-text">Register a new Admin</div>
+        <!-- Sign In message -->
+        <div class="sign-in-text">Sign in to your account</div>
 
-        <form>
-          <!-- Username -->
+        <div>
+          <!-- Email-ID -->
           <div class="sign-in-input-text">Username</div>
-  
           <input id="username" type="text" class="sign-in-input" placeholder="Enter your username" required>
           
           <!-- Password -->
           <div class="sign-in-input-text">Password</div>
-          
           <input id="password" class="sign-in-input" type="password" placeholder="Enter your password" required></input>
+          
 
-          <!-- Confirm Password -->
-          <div class="sign-in-input-text">Password</div>
-          
-          <input id="password" class="sign-in-input" type="password" placeholder="Re-enter your password" required></input>
-          
           <!-- Buttons -->
+
           <div id="button">
+
             <!-- Reset Button -->
             <button type="reset" class="button reset-button">Reset</button>
             
             <!-- Submit Button -->
-            <button type="submit" class="button submit-button" onclick="adminRegRequest()">Submit</button>
+            <button type="submit" class="button submit-button" onclick="adminSignInRequest()">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
     <!-- JS File -->
-    <script src="/JS Files/Site-Pages/admin-site.js"></script>
+    <script src="/JS Files/sign-in.js"></script>
   </body>
 </html>

@@ -1,15 +1,17 @@
+<!-- http://127.0.0.1:5500/Html-Files/Sign-In-Pages/teacher-sign-in.html -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="/Images/Logo/favicon-32x32.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="School Sign In Page" />
-    <title>School Sign In</title>
+    <meta name="description" content="Teacher Sign In Page" />
+    <title>Teacher Sign In</title>
 
     <!-- CSS files -->
     <link rel="stylesheet" href="/CSS files/Sign-In-Pages/sign-in.css" />
-    <link rel="stylesheet" href="/CSS files/Sign-In-Pages/school-sign-in.css" />
+    <link rel="stylesheet" href="/CSS files/Sign-In-Pages/teacher-sign-in.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -24,8 +26,8 @@
     <!-- JQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
-  
-  <body style="background-color:#C2D3E7;">
+
+  <body style="background-color:#FDF1E5;">
 
     <div class="container-fluid">
 
@@ -33,14 +35,13 @@
       <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="homePage()"/>
     </div>
 
-
     <div class="background">
-      
+
       <!-- Sign-In Form -->
       <div class="sign-in-box">
 
         <!-- Admin Vector -->
-        <img class="vector" src="/Images/Login Vectors/School-Sign-In.png" alt=""/>
+        <img class="vector" src="/Images/Login Vectors/Teacher-Sign-In.png" alt=""/>
 
         <!-- Welcome Heading -->
         <div class="welcome-text">Welcome</div>
@@ -49,6 +50,7 @@
         <div class="sign-in-text">Sign in to your account</div>
 
         <form>
+
           <!-- Email-ID -->
           <div class="sign-in-input-text">Username</div>
           <input id="username" type="text" class="sign-in-input" placeholder="Enter your username" required>
@@ -57,14 +59,14 @@
           <div class="sign-in-input-text">Password</div>
           <input id="password" class="sign-in-input" type="password" placeholder="Enter your password" required></input>
           
-
           <!-- Buttons -->
           <div id="button">
+
             <!-- Reset Button -->
             <button type="reset" class="button reset-button">Reset</button>
             
             <!-- Submit Button -->
-            <button type="submit" class="button submit-button" onclick="schoolSignInRequest()">Submit</button>
+            <button type="submit" class="button submit-button" onclick="teacherSignInRequest()">Submit</button>
           </div>
         </form>
       </div>
