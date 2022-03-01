@@ -10,8 +10,8 @@
     <title>Admin Registration</title>
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="/CSS files/Registration-Pages/admin-registration.css" />
     <link rel="stylesheet" href="/CSS files/Registration-Pages/registration.css" />
+    <link rel="stylesheet" href="/CSS files/Registration-Pages/admin-registration.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -29,7 +29,7 @@
   <body style="background-color:#C8CFEB;">
     <div class="container-fluid">
       <!-- Back icon -->
-      <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="homePage()"/>
+      <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="adminSite()"/>
     </div>
 
     <div class="background">
@@ -64,16 +64,16 @@
           <!-- Buttons -->
           <div id="button">
             <!-- Reset Button -->
-            <button type="reset" class="button reset-button" onclick="resetSignIn()">Reset</button>
+            <button type="reset" class="button reset-button">Reset</button>
             
             <!-- Submit Button -->
-            <button type="submit" class="button submit-button" onclick="adminSignIn()">Submit</button>
+            <button type="submit" class="button submit-button" onclick="adminRegRequest()">Submit</button>
           </div>
         </form>
       </div>
     </div>
 
-    <script src="/JS Files/index.js"></script>
-    <script src="/JS Files/site.js"></script>
+    <!-- JS File -->
+    <script src="/JS Files/Site-Pages/admin-site.js"></script>
   </body>
 </html>

@@ -1,3 +1,5 @@
+<!-- http://127.0.0.1:5500/Html%20files/Site-Pages/admin-site.html -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,6 +10,7 @@
     <title>Admin Site</title>
 
     <!-- CSS files -->
+    <link rel="stylesheet" href="/CSS files/Site-Pages/site.css" />
     <link rel="stylesheet" href="/CSS files/Site-Pages/admin-site.css" />
 
     <!-- Bootstrap cdns -->
@@ -23,10 +26,14 @@
     <!-- JQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
+
   <body>
+
     <!-- Site Navbar -->
     <nav class="site-navbar">
+
       <div class="site-navbar-left">
+        
         <!-- Site Vector -->
         <img
           class="site-vector"
@@ -39,7 +46,9 @@
       </div>
 
       <div class="site-navbar-right">
+
         <div class="logout-btn">
+
           <!-- Logout Vector -->
           <img
             src="/Images/Utility Icons/Logout.png"
@@ -53,10 +62,13 @@
       </div>
     </nav>
 
+
     <!-- Tabs -->
     <div class="container registration-tab-area">
+
       <!-- School Registration -->
       <div class="registration-tab school-registration" onclick="schoolReg()">
+
         <!-- School Vector -->
         <img
           src="/Images/Site Vectors/School-Registration.png"
@@ -67,8 +79,10 @@
         <label for="" class="registration-text">SCHOOL REGISTRATION</label>
       </div>
 
+
       <!-- Admin Registration -->
       <div class="registration-tab admin-registration" onclick="adminReg()">
+        
         <!-- Admin Vector -->
         <img
           src="/Images/Site Vectors/Admin-Registration.png"
@@ -78,8 +92,10 @@
         <label for="" class="registration-text">ADMIN REGISTRATION</label>
       </div>
 
+
       <!-- Registered Schools -->
       <div class="registration-tab registered-school" onclick="schoolList()">
+
         <!-- Admin Vector -->
         <img
           src="/Images/Site Vectors/Registered-Schools.png"
@@ -90,6 +106,7 @@
       </div>
     </div>
 
+    <!-- JS Files -->
     <script src="/JS Files/site.js"></script>
   </body>
 </html>

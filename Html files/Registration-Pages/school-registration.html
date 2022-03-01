@@ -29,7 +29,7 @@
   <body style="background-color:#D9E3FC;">
     <div class="container-fluid">
       <!-- Back icon -->
-      <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="homePage()"/>
+      <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="adminSite()"/>
     </div>
 
     <div class="background">
@@ -82,22 +82,21 @@
             <!-- Address -->
             <div class="sign-in-input-text">Address</div>
             
-            <input id="address" class="sign-in-input" type="text" placeholder="Enter your message" required></input>
+            <input id="address" class="sign-in-input" type="text" placeholder="Enter address" required></input>
           </div>
           
           <!-- Buttons -->
           <div id="button-area">
             <!-- Reset Button -->
-            <button type="reset" class="button reset-button" onclick="resetSignIn()">Reset</button>
+            <button type="reset" class="button reset-button">Reset</button>
             
             <!-- Submit Button -->
-            <button type="submit" class="button submit-button" onclick="adminSignIn()">Submit</button>
+            <button type="submit" class="button submit-button" onclick="schoolRegRequest()">Submit</button>
           </div>
         </form>
       </div>
     </div>
 
-    <script src="/JS Files/index.js"></script>
-    <script src="/JS Files/site.js"></script>
+    <script src="/JS Files/Site-Pages/admin-site.js"></script>
   </body>
 </html>

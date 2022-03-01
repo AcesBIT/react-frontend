@@ -8,8 +8,8 @@
     <title>Admin Sign In</title>
 
     <!-- CSS files -->
-    <link rel="stylesheet" href="/CSS files/Sign-In-Pages/admin-sign-in.css" />
     <link rel="stylesheet" href="/CSS files/Sign-In-Pages/sign-in.css" />
+    <link rel="stylesheet" href="/CSS files/Sign-In-Pages/admin-sign-in.css" />
 
     <!-- Bootstrap cdns -->
     <link
@@ -24,13 +24,19 @@
     <!-- JQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   </head>
+  
   <body style="background-color:#E8EEFE;">
+
+
     <div class="container-fluid">
+
       <!-- Back icon -->
       <img class="back-icon" src="/Images/Utility Icons/Back.png" alt="" onclick="homePage()"/>
     </div>
 
+
     <div class="background">
+
       <!-- Sign-In Form -->
       <div class="sign-in-box">
 
@@ -46,18 +52,19 @@
         <form>
           <!-- Email-ID -->
           <div class="sign-in-input-text">Username</div>
-  
           <input id="username" type="text" class="sign-in-input" placeholder="Enter your username" required>
           
           <!-- Password -->
           <div class="sign-in-input-text">Password</div>
-          
           <input id="password" class="sign-in-input" type="password" placeholder="Enter your password" required></input>
           
+
           <!-- Buttons -->
+
           <div id="button">
+
             <!-- Reset Button -->
-            <button type="reset" class="button reset-button" onclick="resetSignIn()">Reset</button>
+            <button type="reset" class="button reset-button">Reset</button>
             
             <!-- Submit Button -->
             <button type="submit" class="button submit-button" onclick="adminSignInRequest()">Submit</button>
@@ -66,7 +73,7 @@
       </div>
     </div>
 
-    <script src="/JS Files/index.js"></script>
+    <!-- JS File -->
     <script src="/JS Files/sign-in.js"></script>
   </body>
 </html>
