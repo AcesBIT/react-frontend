@@ -47,7 +47,7 @@
 
       <div class="site-navbar-right">
 
-        <div class="logout-btn">
+        <div class="logout-btn" onclick="homePage()">
 
           <!-- Logout Vector -->
           <img
@@ -94,7 +94,7 @@
 
 
       <!-- Promoted Students -->
-      <div class="registration-tab registered-school" onclick="promotedStudents()">
+      <div class="registration-tab registered-school" onclick="promoteStudents()">
 
         <!-- Registered Students Vector -->
         <img
@@ -102,11 +102,11 @@
           alt=""
           class="registration-vector registered-school-vector teacher-site-registration-vector"
         />
-        <label for="" class="registration-text">PROMOTE</label>
+        <label for="" class="registration-text">PROMOTE STUDENTS</label>
       </div>
 
       <!--Student classes -->
-      <div class="registration-tab student-attendance" onclick="student()">
+      <div class="registration-tab student-attendance" onclick="registeredStudents()">
 
         <!-- Student Vector -->
         <img
@@ -114,12 +114,13 @@
           alt=""
           class="registration-vector"
         />
-        <label for="" class="registration-text">STUDENT</label>
+        <label for="" class="registration-text">REGISTERED STUDENTS</label>
       </div>
     </div>
 
 
-    <!-- JS File -->
+    <!-- JS Files -->
+    <script src="/JS Files/index.js"></script>
     <script src="/JS Files/site.js"></script>
   </body>
 </html>

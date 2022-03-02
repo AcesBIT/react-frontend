@@ -5,6 +5,11 @@ $(document).ready(function () {
   });
 });
 
+// Returning to the home page
+function homePage() {
+  window.open("../index.html", "_self");
+}
+
 // Going to the Admin sign-in page
 function adminSignIn() {
   window.open("./Sign-In-Pages/admin-sign-in.html", "_self");

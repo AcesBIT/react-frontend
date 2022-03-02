@@ -45,7 +45,7 @@
         <!-- Registration message -->
         <div class="sign-in-text">Register a new Admin</div>
 
-        <form>
+        <div>
           <!-- Username -->
           <div class="sign-in-input-text">Username</div>
   
@@ -59,17 +59,17 @@
           <!-- Confirm Password -->
           <div class="sign-in-input-text">Password</div>
           
-          <input id="password" class="sign-in-input" type="password" placeholder="Re-enter your password" required></input>
+          <input id="re-password" class="sign-in-input" type="password" placeholder="Re-enter your password" required></input>
           
           <!-- Buttons -->
           <div id="button">
             <!-- Reset Button -->
-            <button type="reset" class="button reset-button">Reset</button>
+            <button type="reset" class="button reset-button" onclick="resetAdminReg()">Reset</button>
             
             <!-- Submit Button -->
-            <button type="submit" class="button submit-button" onclick="adminRegRequest()">Submit</button>
+            <button type="submit" class="button submit-button" onclick="adminRegRequest(), resetAdminReg()">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 

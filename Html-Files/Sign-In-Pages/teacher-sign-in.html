@@ -49,7 +49,7 @@
         <!-- Sign In message -->
         <div class="sign-in-text">Sign in to your account</div>
 
-        <form>
+        <div>
 
           <!-- Email-ID -->
           <div class="sign-in-input-text">Username</div>
@@ -63,16 +63,17 @@
           <div id="button">
 
             <!-- Reset Button -->
-            <button type="reset" class="button reset-button">Reset</button>
+            <button type="reset" class="button reset-button" onclick="resetSignIn()">Reset</button>
             
             <!-- Submit Button -->
             <button type="submit" class="button submit-button" onclick="teacherSignInRequest()">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
-    <!-- JS File -->
+    <!-- JS Files -->
+    <script src="/JS Files/index.js"></script>
     <script src="/JS Files/sign-in.js"></script>
   </body>
 </html>

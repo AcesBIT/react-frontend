@@ -45,7 +45,7 @@
         <!-- Sign In message -->
         <div class="sign-in-text">Register a new School</div>
 
-        <form>
+        <div>
           <div class="input-field">
             <div class="row-aligned">
               <!-- School Name -->
@@ -88,15 +88,16 @@
           <!-- Buttons -->
           <div id="button-area">
             <!-- Reset Button -->
-            <button type="reset" class="button reset-button">Reset</button>
+            <button type="reset" class="button reset-button" onclick="resetSchoolReg()">Reset</button>
             
             <!-- Submit Button -->
             <button type="submit" class="button submit-button" onclick="schoolRegRequest()">Submit</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
 
+    <!-- JS File -->
     <script src="/JS Files/Site-Pages/admin-site.js"></script>
   </body>
 </html>
