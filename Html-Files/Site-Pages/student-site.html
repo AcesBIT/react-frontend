@@ -42,7 +42,7 @@
         />
 
         <!-- Site Title -->
-        <label class="site-title">TEACHER</label>
+        <label class="site-title">STUDENT</label>
       </div>
 
       <div class="site-navbar-right">
@@ -62,11 +62,133 @@
       </div>
     </nav>
 
-    <!-- Write your code from here -->
+
+    <!-- Student Content Area -->
+    <div class="container student-content-area">
+      <div class="student-details">
+
+        <!-- Student Image -->
+        <img class="student-image" src="/Images/Student/Swapnodeep Biswas passport size photo.jpeg" alt="">
+
+        <!-- Student Details -->
+        <div class="student-info">
+
+          <!-- First row -->
+          <div class="align-row">
+
+            <!-- Student Name -->
+            <div class="w50">
+              <div class="student-info-section margin">
+                <div class="student-info-text">Name</div>
+                <div id="name" class="student-info-data">Swapnodeep Biswas</div>
+              </div>
+            </div>
+
+            <!-- Student Email -->
+            <div class="w50">
+              <div class="student-info-section">
+                <div class="student-info-text">Email</div>
+                <div id="email" class="student-info-data">bonny2610@gmail.com</div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Second row -->
+          <div class="align-row">
+            <div class="w33">
+              <!-- Student Class -->
+              <div class="student-info-section margin">
+                <div class="student-info-text">Class</div>
+                <div id="class" class="student-info-data">12</div>
+              </div>
+            </div>
+  
+  
+            <!-- Student DOB -->
+            <div class="w33">
+              <div class="student-info-section margin">
+                <div class="student-info-text">Date of Birth</div>
+                <div id="dob" class="student-info-data">26-10-2000</div>
+              </div>
+            </div>
+
+            <!-- Student YOA -->
+            <div class="w33">
+              <div class="student-info-section margin">
+                <div class="student-info-text">Year of Admission</div>
+                <div id="yoa" class="student-info-data">2004</div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Third row -->
+        <div class="align-row">
+
+          <!-- Student Guardian Name -->
+          <div class="w50">
+            <div class="student-info-section margin">
+              <div class="student-info-text">Guardian Name</div>
+              <div id="guardName" class="student-info-data">Pranab Kumar Biswas</div>
+            </div>
+          </div>
+
+          <!-- Student Phone -->
+          <div class="w50">
+            <div class="student-info-section">
+              <div class="student-info-text">Phone</div>
+              <div id="phone" class="student-info-data">8910684983</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Student Address -->
+        <div class="student-info-section">
+          <div class="student-info-text">Address</div>
+          <div id="address" class="student-info-data">C-15, Anandamoyee Apartment, Mohishgot, Dhalipara, Newtown, Kolkata, West Bengal 700102</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="statistics">
+      <div class="circular-progress-bar">
+        <div class="outer">
+          <div class="inner">
+            <div id="percentage" class="percentage-value"></div>
+          </div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+          <defs>
+             <linearGradient id="GradientColor">
+                <stop offset="0%" stop-color="#654dd3" />
+                <stop offset="100%" stop-color="#7863d8" />
+             </linearGradient>
+          </defs>
+          <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+  </svg>
+      </div>
+      
+      <!-- Present Stats -->
+      <div class="statistics-box">
+        <div class="statistics-text">Your Attendance</div>
+        <div id="present" class="statistics-value">50</div>
+      </div>
+
+      <!-- Total number of days -->
+      <div class="statistics-box">
+        <div class="statistics-text">Total Number of Days</div>
+        <div id="present" class="statistics-value">50</div>
+      </div>
+    </div>
+
+      </div>
+      
+    </div>
    
 
     <!-- JS Files -->
     <script src="/JS Files/index.js"></script>
     <script src="/JS Files/site.js"></script>
+    <script src="/JS Files/Site-Pages/student-site.js"></script>
   </body>
 </html>
