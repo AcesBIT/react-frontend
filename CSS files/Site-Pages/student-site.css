@@ -141,7 +141,9 @@ svg {
 
 @keyframes anim {
     100% {
-        stroke-dashoffset: 94.4;
+        stroke-dashoffset: 94.4; 
+        /* 0 means nothing is hiding, i.e. full svg is visible */
+        /* 472 means nothing is visible */
     }
 }
 
